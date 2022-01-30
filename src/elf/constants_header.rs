@@ -55,6 +55,8 @@ pub const EM_RH32: u16 = 38;
 pub const EM_RCE: u16 = 39;
 /// ARM
 pub const EM_ARM: u16 = 40;
+/// MOS
+pub const EM_MOS: u16 = 6502;
 /// Digital Alpha
 pub const EM_FAKE_ALPHA: u16 = 41;
 /// Hitachi SH
@@ -399,6 +401,7 @@ pub fn machine_to_str (machine: u16) -> &'static str {
         EM_RH32 => "RH32",
         EM_RCE => "RCE",
         EM_ARM => "ARM",
+        EM_MOS => "MOS",
         EM_FAKE_ALPHA => "FAKE_ALPHA",
         EM_SH => "SH",
         EM_SPARCV9 => "SPARCV9",
